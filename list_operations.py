@@ -23,9 +23,8 @@ def tail(input_list):
     ['Feb', 'Mar']
 
     """
-    last_item = input_list[-1]
 
-    return last_item
+    return input_list[1:]
 
 
 
@@ -101,7 +100,10 @@ def middle(input_list):
 
     """
 
-    return []
+    middle_elements = input_list[2:-2]
+
+    return middle_elements
+
 
 
 def inner_four(input_list):
@@ -114,7 +116,9 @@ def inner_four(input_list):
 
     """
 
-    return []
+    list_of_inner_four = input_list[2:6]
+
+    return list_of_inner_four
 
 
 def inner_four_end(input_list):
@@ -130,7 +134,9 @@ def inner_four_end(input_list):
 
     """
 
-    return []
+    inner_four_end_list = input_list[-6:-2]
+
+    return inner_four_end_list
 
 
 def replace_head(input_list):
@@ -144,6 +150,8 @@ def replace_head(input_list):
     True
 
     """
+
+    input_list[0] = 42
 
     pass
 
@@ -159,6 +167,10 @@ def replace_third_and_last(input_list):
     True
 
     """
+
+    input_list[2] = 37
+
+    input_list[-1] = 37
 
     pass
 
@@ -179,6 +191,8 @@ def replace_middle(input_list):
 
     """
 
+    input_list[2:-2] = [42, 37]
+
     pass
 
 
@@ -193,6 +207,10 @@ def delete_third_and_seventh(input_list):
     True
 
     """
+
+    input_list.pop(2)
+
+    input_list.pop(-2)
 
     pass
 
@@ -210,6 +228,8 @@ def delete_middle(input_list):
     True
 
     """
+
+    del input_list[2:-2]
 
     pass
 
